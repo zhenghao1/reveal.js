@@ -1,0 +1,43 @@
+/*********************************************
+ * CUSTOM STYES
+ *********************************************/
+ .center {
+    text-align: center;
+ }
+
+.django,
+.django h2 {
+    color: #FFC753;
+}
+
+ .django .state-background {
+    background-color: #234F32;
+
+ }
+
+ .tornado,
+ .tornado h2 {
+    color: #4d8cbf;
+ }
+
+ .tornado .state-background {
+    background-color: #fff;
+ }
+
+ .flask,
+ .flask h2 {
+    color: #000;
+ }
+
+ .flask .state-background {
+    background-color: #fff;
+ }
+
+.pyramid,
+.pyramid h2 {
+    color: #000;
+}
+
+ .pyramid .state-background {
+    background-image:-webkit-linear-gradient(#F98331,#F7A126);
+ }

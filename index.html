@@ -1,9 +1,9 @@
-<!doctype html>  
+<!doctype html>
 <html lang="en">
-	
+
 	<head>
 		<meta charset="utf-8">
-		
+
 		<title>reveal.js - The HTML Presentation Framework</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
@@ -11,11 +11,12 @@
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-		
+
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-		
+
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -29,36 +30,91 @@
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
 	</head>
-	
+
 	<body>
-		
+
 		<div class="reveal">
 
 			<!-- Used to fade in a background when a specific slide state is reached -->
 			<div class="state-background"></div>
-			
+
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
+					<h1>Python Pyramid Web 框架</h1>
+					<em class='pull-right'>黄峥峼 (Mark Huang)</em>
 				</section>
-				
+
+				<section><img class="center" width="" src="http://imgs.xkcd.com/comics/python.png" /></section>
+
 				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with 
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-					<p>
-						<i><small>- <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small></i>
-					</p>
+					<h2>个人介绍</h2>
+					<ul>
+						<li class="fragment">2011 12月从新加坡来到杭州工作</li>
+						<li class="fragment">在一间德国小企业； ERP</li>
+						<li class="fragment">之前，在Lucasfilm工作。开发内部的特效工具与内部网页。（Python）</li>
+						<li class="fragment">Python已经学了4年，特别满意！</li>
+					</ul>
+					<img class="fragment center" src="img/ironman2.jpg" />
 
 					<aside class="notes">
 						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you run the speaker notes server.
 					</aside>
 				</section>
-				
+
+				<section>
+					<section>
+						<h2>Python Web 框架</h2>
+
+						<ul>
+							<li>不同的框架可以解决不同的问题；没有一个“最棒”的</li>
+							<li>最重要的就是要符合你的需求</li>
+						</ul>
+
+					</section>
+
+					<section data-state="tornado" class="tornado">
+						<h2>Tornado</h2>
+						<ul>
+							<li class="fragment">tornado原本是FriendFeed引擎的开源版本</li>
+							<li class="fragment">为解决“C10K”问题而生的</li>
+							<li class="fragment">非组赛的框架；跟Scala的Lift框架很像</li>
+							<li class="fragment">代码与Python Google App Engine很相似</li>
+						</ul>
+					</section>
+
+					<section data-state="flask" class="flask">
+						<h2>Flask</h2>
+						<ul>
+							<li class="fragment">Flask 是一個輕量級的框架</li>
+							<li class="fragment">基於 Werkzeug WSGI 工具箱</li>
+							<li class="fragment">"Micro-framework"因为它使用简单的核心</li>
+							<li class="fragment">可以用Flask-Extensions添加其他功能： ORM, Form Validation...</li>
+						</ul>
+					</section>
+
+					<section data-state="django" class="django">
+						<h2>Django</h2>
+						<ul>
+							<li class="fragment">它是在Lawrence Journal-World的报馆诞生的</li>
+							<li class="fragment">为了让编辑者迅速地上传文章</li>
+							<li class="fragment">注重组件的重用性和“可插拔性”，敏捷开发和DRY法则</li>
+							<li class="fragment">表单序列化及验证系统</li>
+							<li class="fragment">Jinja2 模板引擎</li>
+						</ul>
+						<img class="fragment" src="http://www.the-dig.com/blog/media/uploads/changeform_big.jpg" alt="Django Admin Interface">
+					</section>
+
+					<section data-state="pyramid" class="pyramid">
+						<h2>Pyramid</h2>
+						<ul>
+							<li class="fragment">Pyramid是Pylons Project的核心产品</li>
+							<li class="fragment">早期，也被称为repoze.bfg, 包含了不少Zope的功能</li>
+						</ul>
+					</section>
+				</section>
+
+
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
@@ -99,13 +155,6 @@
 				</section>
 
 				<section>
-					<h2>rvl.io</h2>
-					<p>
-						If you don't like writing slides in HTML you can use the online editor <a href="http://www.rvl.io" target="_blank">rvl.io</a>.
-					</p>
-				</section>
-
-				<section>
 					<h2>Works in Mobile Safari</h2>
 					<p>
 						Try it out! You can swipe through the slides pinch your way to the overview.
@@ -121,7 +170,7 @@
 						<li>Or here</li>
 					</ul>
 				</section>
-				
+
 				<section>
 					<h2>Fantastic Ordered List</h2>
 					<ol>
@@ -133,13 +182,13 @@
 
 				<section data-markdown>
 					## Markdown support
-					
+
 					For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
 
 					<pre><code contenteditable style="margin-top: 20px;">&lt;section data-markdown&gt;
   ## Markdown support
 
-  For those of you who like that sort of thing. 
+  For those of you who like that sort of thing.
   Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
 &lt;/section&gt;
 					</code></pre>
@@ -216,17 +265,17 @@
 						The nice thing about standards is that there are so many to choose from</q> and block:
 					</p>
 					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						For years there has been a theory that millions of monkeys typing at random on millions of typewriters would 
+						For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
 						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
 					</blockquote>
 				</section>
-				
+
 				<section>
 					<h2>Pretty Code</h2>
 					<pre><code contenteditable>
 function linkify( selector ) {
   if( supports3DTransforms ) {
-    
+
     var nodes = document.querySelectorAll( selector );
 
     for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
@@ -241,7 +290,7 @@ function linkify( selector ) {
 					</code></pre>
 					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
 				</section>
-				
+
 				<section>
 					<h2>Intergalactic Interconnections</h2>
 					<p>
@@ -260,14 +309,14 @@ function linkify( selector ) {
 						<li class="fragment"><strong>fragments</strong></li>
 					</ol>
 				</section>
-				
+
 				<section>
 					<h2>Spectacular image!</h2>
 					<a class="image" href="http://hakim.se/experiments/html5/breakdom/" target="_blank">
 						<img width="320" height="412" src="https://s3.amazonaws.com/hakim-static/reveal-js/breakdom.png" alt="BreakDOM game screenshot">
 					</a>
 				</section>
-				
+
 				<section>
 					<h2>Export to PDF</h2>
 					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
@@ -276,7 +325,7 @@ function linkify( selector ) {
 						document.getElementById('slideshare').attributeName = 'allowfullscreen';
 					</script>
 				</section>
-				
+
 				<section>
 					<h2>Stellar Links</h2>
 					<ul>
@@ -285,7 +334,7 @@ function linkify( selector ) {
 						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
 					</ul>
 				</section>
-				
+
 				<section>
 					<h1>THE END</h1>
 					<h3>BY Hakim El Hattab / hakim.se</h3>
@@ -302,21 +351,21 @@ function linkify( selector ) {
 
 			<!-- Presentation progress bar -->
 			<div class="progress"><span></span></div>
-			
+
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
 
 		<script>
-			
+
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				controls: true,
 				progress: true,
 				history: true,
-				
+
 				theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
 
@@ -330,7 +379,7 @@ function linkify( selector ) {
 					{ src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
 				]
 			});
-			
+
 		</script>
 
 	</body>
